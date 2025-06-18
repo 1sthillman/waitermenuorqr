@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Sipariş Sistemi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-primary text-white p-6 shadow-md">
+            <div class="container mx-auto">
+                <h1 class="text-2xl font-bold">QR Sipariş Sistemi</h1>
+                <p class="text-white text-opacity-80 mt-2">Restoran yönetim sistemi için QR kod tabanlı sipariş çözümü</p>
+            </div>
+        </header>
+
+        <main class="flex-1 container mx-auto p-6">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-xl font-semibold mb-4">Sistem Hakkında</h2>
+                <p class="mb-4">Bu sistem, restoran müşterilerinin QR kod ile sipariş vermelerini, garsonların bu siparişleri onaylamalarını ve mutfağa iletmelerini sağlar.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-700 mb-2">Müşteri Deneyimi</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li>QR kod ile menüye erişim</li>
+                            <li>Kolay sipariş verme</li>
+                            <li>Garson çağırma</li>
+                            <li>Sipariş durumu takibi</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-green-700 mb-2">Restoran Yönetimi</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li>Sipariş onay sistemi</li>
+                            <li>Gerçek zamanlı bildirimler</li>
+                            <li>Masa durumu takibi</li>
+                            <li>Verimli servis yönetimi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-xl font-semibold mb-4">Özellikler</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="text-primary text-2xl mb-2">
+                            <i class="ri-check-double-line"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">Garson Onay Mekanizması</h3>
+                        <p class="text-gray-600 text-sm">Müşteri QR kod ile sipariş verdiğinde, sipariş önce garson onayına gider.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="text-primary text-2xl mb-2">
+                            <i class="ri-notification-3-line"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">Gerçek Zamanlı Bildirimler</h3>
+                        <p class="text-gray-600 text-sm">Yeni siparişler ve garson çağrıları için anında bildirimler.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="text-primary text-2xl mb-2">
+                            <i class="ri-add-circle-line"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">Ek Sipariş Desteği</h3>
+                        <p class="text-gray-600 text-sm">Müşteriler aynı masaya ek sipariş verebilir, mutfak sadece yeni eklenen ürünleri görür.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-semibold mb-4">Masa Durumları</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead>
+                            <tr>
+                                <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Durum</th>
+                                <th class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Açıklama</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">QR_waiting</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Garson onayı bekleyen QR siparişi</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">QR_confirmed</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Garson onaylı QR siparişi</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">preparing</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mutfakta hazırlanan sipariş</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ready</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Servise hazır sipariş</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">delivered</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Teslim edilmiş sipariş</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-gray-800 text-white p-6">
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-lg font-semibold mb-2">QR Sipariş Sistemi</h3>
+                        <p class="text-gray-400">Restoran yönetim sistemi için özel olarak geliştirilmiştir.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold mb-2">Bağlantılar</h4>
+                        <ul class="space-y-1">
+                            <li><a href="qr.html?table=1" class="text-gray-400 hover:text-white">Demo: Masa 1</a></li>
+                            <li><a href="qr.html?table=2" class="text-gray-400 hover:text-white">Demo: Masa 2</a></li>
+                            <li><a href="https://github.com/1sthillman/waitermenuorqr" class="text-gray-400 hover:text-white">GitHub Repo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-700 text-center text-gray-500 text-sm">
+                    &copy; 2023 QR Sipariş Sistemi. Tüm hakları saklıdır.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,16 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f2f2f2"/>
+  <text x="100" y="50" font-family="Arial" font-size="16" text-anchor="middle" fill="#888">İçecek</text>
+  
+  <!-- Bardak çizimi -->
+  <path d="M70,60 L130,60 L120,150 L80,150 Z" stroke="#3A86FF" stroke-width="2" fill="#E3F2FD"/>
+  
+  <!-- Pipet -->
+  <path d="M110,45 L115,60 L115,90" stroke="#FF6B35" stroke-width="3" fill="none"/>
+  
+  <!-- Kabarcıklar -->
+  <circle cx="95" cy="80" r="4" fill="#3A86FF" fill-opacity="0.6"/>
+  <circle cx="105" cy="100" r="3" fill="#3A86FF" fill-opacity="0.6"/>
+  <circle cx="90" cy="110" r="5" fill="#3A86FF" fill-opacity="0.6"/>
+  <circle cx="110" cy="120" r="3" fill="#3A86FF" fill-opacity="0.6"/>
+</svg> 
