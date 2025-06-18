@@ -1,0 +1,16 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f2f2f2"/>
+  <text x="100" y="50" font-family="Arial" font-size="16" text-anchor="middle" fill="#888">Ana Yemek</text>
+  
+  <!-- Tabak çizimi -->
+  <circle cx="100" cy="110" r="60" fill="white" stroke="#888" stroke-width="2"/>
+  <circle cx="100" cy="110" r="50" fill="white" stroke="#888" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- Yemek çizimi -->
+  <ellipse cx="100" cy="100" rx="30" ry="20" fill="#FF6B35" opacity="0.8"/>
+  <path d="M70,110 C85,130 115,130 130,110" stroke="#3A86FF" stroke-width="3" fill="none"/>
+  
+  <!-- Çatal ve bıçak -->
+  <path d="M60,160 L70,140 L80,160" stroke="#888" stroke-width="2" fill="none"/>
+  <path d="M140,140 L140,160" stroke="#888" stroke-width="2" fill="none"/>
+</svg> 

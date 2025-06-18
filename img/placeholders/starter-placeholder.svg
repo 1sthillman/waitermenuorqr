@@ -1,0 +1,19 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f2f2f2"/>
+  <text x="100" y="50" font-family="Arial" font-size="16" text-anchor="middle" fill="#888">Başlangıç</text>
+  
+  <!-- Çorba kâsesi -->
+  <ellipse cx="100" cy="110" rx="50" ry="20" fill="white" stroke="#888" stroke-width="2"/>
+  <ellipse cx="100" cy="110" rx="40" ry="15" fill="#FF6B35" opacity="0.7"/>
+  
+  <!-- Buhar -->
+  <path d="M80,90 C75,80 85,75 80,65" stroke="#888" stroke-width="1" fill="none"/>
+  <path d="M90,85 C85,75 95,70 90,60" stroke="#888" stroke-width="1" fill="none"/>
+  <path d="M100,80 C95,70 105,65 100,55" stroke="#888" stroke-width="1" fill="none"/>
+  <path d="M110,85 C105,75 115,70 110,60" stroke="#888" stroke-width="1" fill="none"/>
+  <path d="M120,90 C115,80 125,75 120,65" stroke="#888" stroke-width="1" fill="none"/>
+  
+  <!-- Kaşık -->
+  <path d="M140,130 C150,120 150,110 140,100" stroke="#888" stroke-width="2" fill="none"/>
+  <ellipse cx="140" cy="95" rx="5" ry="8" fill="white" stroke="#888" stroke-width="1"/>
+</svg> 

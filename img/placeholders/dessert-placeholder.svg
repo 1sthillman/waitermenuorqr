@@ -1,0 +1,22 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f2f2f2"/>
+  <text x="100" y="50" font-family="Arial" font-size="16" text-anchor="middle" fill="#888">Tatlı</text>
+  
+  <!-- Pasta tabağı -->
+  <ellipse cx="100" cy="130" rx="70" ry="15" fill="white" stroke="#888" stroke-width="1"/>
+  
+  <!-- Pasta dilimi -->
+  <path d="M70,80 L100,130 L130,80 Z" fill="#FF6B35" stroke="#888" stroke-width="1"/>
+  <path d="M70,80 C90,60 110,60 130,80" fill="#FF6B35" stroke="#888" stroke-width="1"/>
+  
+  <!-- Krema -->
+  <path d="M85,70 C95,50 105,50 115,70" stroke="white" stroke-width="4" fill="none"/>
+  
+  <!-- Kiraz -->
+  <circle cx="100" cy="60" r="6" fill="#E53935"/>
+  <path d="M100,60 C100,50 105,45 110,45" stroke="#4CAF50" stroke-width="1" fill="none"/>
+  
+  <!-- Çatal -->
+  <path d="M150,110 L140,120 L150,130" stroke="#888" stroke-width="1" fill="none"/>
+  <path d="M150,110 L150,130" stroke="#888" stroke-width="1" fill="none"/>
+</svg> 
